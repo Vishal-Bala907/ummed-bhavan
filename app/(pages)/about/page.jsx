@@ -23,15 +23,15 @@ export default function page() {
         <Header1 />
         <Hero />
         <Information />
-        <Banner />
+        {/* <Banner /> */}
         <FeaturesOne />
-        <div className="mt-60">
+        {/* <div className="mt-60">
           <FeturesTwo />
         </div>
         <TestimonialOne />
-        <BannerOne />
-        <Team />
-        <BrandsOne />
+        <BannerOne /> */}
+        {/* <Team />
+        <BrandsOne /> */}
         <FooterOne />
       </main>
     </>

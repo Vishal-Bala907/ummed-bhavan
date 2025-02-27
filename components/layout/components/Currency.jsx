@@ -8,11 +8,19 @@ const currencies = [
     title: "Facility",
     location: "/tour-list-6",
   },
+  {
+    title: "Events",
+    location: "/events",
+  },
+  {
+    title: "About",
+    location: "/about",
+  },
 ];
 
 export default function Currency({ parentClass }) {
   const [currentdd, setCurrentdd] = useState("");
-  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+  const [selectedCurrency, setSelectedCurrency] = useState("select");
   const dropDownContainer = useRef();
   useEffect(() => {
     const handleClick = (event) => {
@@ -51,17 +59,19 @@ export default function Currency({ parentClass }) {
         } `}
       >
         <div className="headerDropdown">
-          <div className="headerDropdown__container">
+          <ul className="headerDropdown__container">
             {currencies.map((elm, i) => (
-              <Link
-                key={i}
-                className="headerDropdown__item"
-                href={elm.location}
-              >
-                <button className="">{elm.title}</button>
-              </Link>
+              <li>
+                <Link
+                  key={i}
+                  className="headerDropdown__item"
+                  href={elm.location}
+                >
+                  <button className="">{elm.title}</button>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </div>
