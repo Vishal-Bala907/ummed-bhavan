@@ -16,6 +16,18 @@ const currencies = [
     title: "About",
     location: "/about",
   },
+  {
+    title: "Club Gallary",
+    location: "/clubGallary",
+  },
+  {
+    title: "Event Gallary",
+    location: "/eventGallary",
+  },
+  {
+    title: "Contact Us",
+    location: "/contact",
+  },
 ];
 
 export default function Currency({ parentClass }) {

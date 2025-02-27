@@ -16,7 +16,7 @@ export default function page() {
       <main>
         <Header1 />
         <Map />
-        <Locations />
+        {/* <Locations /> */}
         <ContactForm />
 
         <FooterOne />
