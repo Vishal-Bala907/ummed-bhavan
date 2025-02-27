@@ -16,35 +16,35 @@ const slides = [
     imageSrc: "/img/hero/7/1.jpg",
     subtitle:
       "Search, compare and book 15,000+ multiday tours all over the world.",
-    title: "Tours and Trip packages, Globally",
+    title: "WELCOME TO SHREE UMMED CLUB",
   },
   {
     id: 2,
-    imageSrc: "/img/hero/7/1.jpg",
+    imageSrc: "/img/hero/7/2.jpg",
     subtitle:
-      "Search, compare and book 15,000+ multiday tours all over the world.",
-    title: "Tours and Trip packages, Globally",
+      "Experience unforgettable moments at our exclusive events and celebrations. From cultural festivals to themed parties, we bring people together in joyous harmony.",
+    title: "Events & Celebrations",
   },
   {
     id: 3,
-    imageSrc: "/img/hero/7/1.jpg",
+    imageSrc: "/img/hero/7/3.jpg",
     subtitle:
-      "Search, compare and book 15,000+ multiday tours all over the world.",
-    title: "Tours and Trip packages, Globally",
+      "Stay active and energized with our state-of-the-art sports facilities. Whether you're into swimming, tennis, or indoor games, we have something for every fitness enthusiast.",
+    title: "Sports & Recreation",
   },
   {
     id: 4,
-    imageSrc: "/img/hero/7/1.jpg",
+    imageSrc: "/img/hero/7/4.jpg",
     subtitle:
-      "Search, compare and book 15,000+ multiday tours all over the world.",
-    title: "Tours and Trip packages, Globally",
+      "Savor a culinary journey with our exquisite dining options. Our multi-cuisine restaurant and café offer a delightful ambiance, perfect for family gatherings and social meet-ups.",
+    title: "Dining & Hospitality",
   },
   {
     id: 5,
-    imageSrc: "/img/hero/7/1.jpg",
+    imageSrc: "/img/hero/7/5.jpg",
     subtitle:
-      "Search, compare and book 15,000+ multiday tours all over the world.",
-    title: "Tours and Trip packages, Globally",
+      "Become a part of the Shree Ummed Club family. Enjoy exclusive privileges, access to premium amenities, and a community that celebrates togetherness and well-being.",
+    title: "Membership & Benefits",
   },
 ];
 
@@ -119,14 +119,6 @@ export default function Hero7() {
                     <div className="row justify-center">
                       <div className="col-lg-8 col-md-10">
                         <div className="hero__content text-center">
-                          <div
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                            className="hero__subtitle text-white mb-20 md:mb-10"
-                          >
-                            {elm.subtitle}
-                          </div>
-
                           <h1
                             data-aos="fade-up"
                             data-aos-delay="300"
@@ -136,6 +128,13 @@ export default function Hero7() {
                             <br className="md:d-none" />
                             {elm.title.split(",")[1]}
                           </h1>
+                          <div
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                            className="hero__subtitle text-white mb-20 md:mb-10"
+                          >
+                            {elm.subtitle}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -156,7 +155,7 @@ export default function Hero7() {
           </div>
         </div>
 
-        <div className="hero__filter">
+        {/* <div className="hero__filter">
           <div
             ref={dropDownContainer}
             className="searchForm -type-1 shadow-1 rounded-200"
@@ -249,7 +248,7 @@ export default function Hero7() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

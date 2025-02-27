@@ -18,7 +18,7 @@ export default function TourTypeOne() {
             </h2>
           </div>
 
-          <div className="col-auto">
+          {/* <div className="col-auto">
             <Link
               href={"/tour-list-1"}
               data-aos="fade-right"
@@ -28,7 +28,7 @@ export default function TourTypeOne() {
               <span>See all</span>
               <i className="icon-arrow-top-right text-16 ml-10"></i>
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div
@@ -37,8 +37,7 @@ export default function TourTypeOne() {
           className="grid -type-1 pt-40 sm:pt-20"
         >
           {destinationsSix.map((elm, i) => (
-            <Link
-              href={"/tour-list-1"}
+            <section
               key={i}
               className="featureCard -type-1 -hover-1 overflow-hidden rounded-12 px-30 py-30"
             >
@@ -55,7 +54,7 @@ export default function TourTypeOne() {
               <div className="featureCard__content">
                 <h4 className="text-white">{elm.title}</h4>
               </div>
-            </Link>
+            </section>
           ))}
         </div>
       </div>

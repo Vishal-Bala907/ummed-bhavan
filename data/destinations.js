@@ -276,33 +276,33 @@ export const destinationsFive = [
 export const destinationsSix = [
   {
     id: 1,
-    title: "Cruises",
-    imgSrc: "/img/features/1/1.png",
+    title: "Bar and Dining",
+    imgSrc: "/img/features/1/1.jpeg",
   },
   {
     id: 2,
-    title: "Beach Tours",
-    imgSrc: "/img/features/1/2.png",
+    title: "Family Room",
+    imgSrc: "/img/features/1/2.jpeg",
   },
   {
     id: 3,
-    title: "City Tours",
-    imgSrc: "/img/features/1/3.png",
+    title: "Gymnassium",
+    imgSrc: "/img/features/1/3.jpeg",
   },
   {
     id: 4,
-    title: "Museum Tour",
-    imgSrc: "/img/features/1/4.png",
+    title: "Sports Facilities",
+    imgSrc: "/img/features/1/4.jpeg",
   },
   {
     id: 5,
-    title: "Food",
-    imgSrc: "/img/features/1/5.png",
+    title: "Snooker",
+    imgSrc: "/img/features/1/5.jpeg",
   },
   {
     id: 6,
-    title: "Hiking",
-    imgSrc: "/img/features/1/6.png",
+    title: "Table tennis",
+    imgSrc: "/img/features/1/6.jpeg",
   },
 ];
 

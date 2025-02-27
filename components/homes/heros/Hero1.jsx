@@ -42,6 +42,10 @@ export default function Hero1() {
           height={560}
           src="/img/hero/1/banner_img.jpg"
           alt="image"
+          style={{
+            width: "100% !important",
+            height: "auto !important",
+          }}
         />
         <Image
           width="1800"

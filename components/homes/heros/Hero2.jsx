@@ -93,7 +93,7 @@ export default function Hero2() {
       </div>
 
       <div className="container">
-        <div ref={dropDownContainer} className="hero__filter">
+        {/* <div ref={dropDownContainer} className="hero__filter">
           <div className="searchForm -type-1 shadow-1">
             <div className="searchForm__form">
               <div className="searchFormItem js-select-control js-form-dd">
@@ -181,9 +181,9 @@ export default function Hero2() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="hero__slider">
+        <div className="hero__slider mt-5">
           <div className="hero__bg bg-accent-1">
             <Image
               width={973}

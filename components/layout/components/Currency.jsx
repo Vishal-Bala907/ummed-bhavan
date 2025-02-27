@@ -73,7 +73,7 @@ export default function Currency({ parentClass }) {
         <div className="headerDropdown">
           <ul className="headerDropdown__container">
             {currencies.map((elm, i) => (
-              <li>
+              <li key={i}>
                 <Link
                   key={i}
                   className="headerDropdown__item"
