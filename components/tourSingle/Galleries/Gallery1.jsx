@@ -3,25 +3,25 @@
 import React, { useState } from "react";
 import ImageLightBox from "./ImageLightBox";
 import Image from "next/image";
-const images = [
-  {
-    id: 1,
-    image: `/img/tourSingle/1/1.png`,
-  },
-  {
-    id: 1,
-    image: `/img/tourSingle/1/2.png`,
-  },
-  {
-    id: 1,
-    image: `/img/tourSingle/1/3.png`,
-  },
-  {
-    id: 1,
-    image: `/img/tourSingle/1/4.png`,
-  },
-];
-export default function Gallery1() {
+// const images = [
+//   {
+//     id: 1,
+//     image: `/img/tourSingle/1/1.png`,
+//   },
+//   {
+//     id: 1,
+//     image: `/img/tourSingle/1/2.png`,
+//   },
+//   {
+//     id: 1,
+//     image: `/img/tourSingle/1/3.png`,
+//   },
+//   {
+//     id: 1,
+//     image: `/img/tourSingle/1/4.png`,
+//   },
+// ];
+export default function Gallery1({ tour }) {
   const [activeLightBox, setActiveLightBox] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
   return (
@@ -31,25 +31,25 @@ export default function Gallery1() {
           <Image
             width={1155}
             height={765}
-            src="/img/tourSingle/1/1.png"
+            src={tour.images[0].image}
             alt="image"
           />
           <Image
             width={765}
             height={375}
-            src="/img/tourSingle/1/2.png"
+            src={tour.images[1].image}
             alt="image"
           />
           <Image
             width={375}
             height={375}
-            src="/img/tourSingle/1/3.png"
+            src={tour.images[2].image}
             alt="image"
           />
           <Image
             width={375}
             height={375}
-            src="/img/tourSingle/1/4.png"
+            src={tour.images[3].image}
             alt="image"
           />
         </div>
@@ -85,7 +85,7 @@ export default function Gallery1() {
         </div>
       </div>
       <ImageLightBox
-        images={images}
+        images={tour.images}
         activeLightBox={activeLightBox}
         setActiveLightBox={setActiveLightBox}
         currentSlideIndex={currentSlideIndex}

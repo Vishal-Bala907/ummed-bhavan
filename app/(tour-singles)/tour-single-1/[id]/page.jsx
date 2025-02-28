@@ -4,17 +4,19 @@ import PageHeader from "@/components/tourSingle/PageHeader";
 import TourSlider from "@/components/tourSingle/TourSlider";
 import SingleOne from "@/components/tourSingle/pages/SingleOne";
 import { allTour } from "@/data/tours";
+import facilities from "@/data/facilities";
 
 import React from "react";
 
 export const metadata = {
-  title: "Tour-single-1 || ViaTour - Travel & Tour React NextJS Template",
+  title: "Ummed club kota",
   description: "ViaTour - Travel & Tour React NextJS Template",
 };
 
-export default function page({ params }) {
-  const id = params.id;
-  const tour = allTour.find((item) => item.id == id) || allTour[0];
+export default async function page({ params }) {
+  const id = await params.id;
+  const tour = facilities[id];
+  console.log(tour);
 
   return (
     <>
@@ -23,7 +25,7 @@ export default function page({ params }) {
         <PageHeader />
 
         <SingleOne tour={tour} />
-        <TourSlider />
+        {/* <TourSlider /> */}
         <FooterOne />
       </main>
     </>
