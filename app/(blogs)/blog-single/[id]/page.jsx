@@ -2,7 +2,6 @@ import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
 import Hero1 from "@/components/blogs/Hero1";
 import BlogSingle from "@/components/blogs/BlogSingle";
-import { blogs } from "@/data/blogs";
 import eventDesc from "@/data/eventDesc";
 
 export const metadata = {
@@ -10,8 +9,8 @@ export const metadata = {
   description: "",
 };
 
-export default function page({ params }) {
-  const id = params.id;
+export default async function page({ params }) {
+  const id = await params.id;
   const blog = eventDesc[id];
 
   return (

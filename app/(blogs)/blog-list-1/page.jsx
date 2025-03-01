@@ -13,8 +13,8 @@ export default function page() {
     <>
       <main>
         <Header1 />
-        <Hero1 />
-        <BlogList1 />
+        {/* <Hero1 /> */}
+        {/* <BlogList1 /> */}
         <FooterOne />
       </main>
     </>
