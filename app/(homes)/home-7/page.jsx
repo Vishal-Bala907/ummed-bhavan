@@ -6,6 +6,7 @@ import BannerOne from "@/components/homes/banners/BannerOne";
 import DestinationsOne from "@/components/homes/destinations/DestinationsOne";
 import TopAttractions from "@/components/homes/destinations/TopAttractions";
 import TrendingDestinations from "@/components/homes/destinations/TrendingDestinations";
+import Features9 from "@/components/homes/features/Features9";
 import FeaturesOne from "@/components/homes/features/FeaturesOne";
 import FeaturesThree from "@/components/homes/features/FeaturesThree";
 import Hero7 from "@/components/homes/heros/Hero7";
@@ -39,6 +40,7 @@ export default function page() {
         {/* <TourSlderOne /> */}
         {/* <TestimonialOne /> */}
         <BannerOne />
+        <Features9 />
         <BannerFour />
         <FeaturesThree />
 

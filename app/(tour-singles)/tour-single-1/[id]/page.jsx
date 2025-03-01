@@ -22,7 +22,7 @@ export default async function page({ params }) {
     <>
       <main>
         <Header1 />
-        <PageHeader />
+        {/* <PageHeader /> */}
 
         <SingleOne tour={tour} />
         {/* <TourSlider /> */}

@@ -58,13 +58,21 @@ const EnevtGallary = () => {
       </div>
       {viewBig && (
         <div className="bigImage">
-          <div className="close" onClick={() => handleCloseImageClick()}>
+          <div className="close-evenet" onClick={() => handleCloseImageClick()}>
             <IoCloseSharp />
           </div>
           <div className="d-flex flex-column gap-4">
-            <Image height={600} width={600} src={image} alt="big-image" />{" "}
+            <Image
+              height={600}
+              width={600}
+              src={image}
+              alt="big-image"
+              style={{ border: "2px solid black", borderRadius: "12px" }}
+            />{" "}
             <br />
-            <h4 className="text-white text-center">{text}</h4>
+            <h4 className="text-black stroke-1 outline-1 text-center">
+              {text}
+            </h4>
           </div>
         </div>
       )}
