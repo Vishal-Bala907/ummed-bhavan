@@ -292,7 +292,7 @@ export const destinationsSix = [
   {
     id: 4,
     title: "Sports Facilities",
-    imgSrc: "/img/features/1/4.jpeg",
+    imgSrc: "/img/features/1/image1.jpeg",
   },
   {
     id: 5,
