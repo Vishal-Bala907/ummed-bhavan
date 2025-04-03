@@ -104,9 +104,9 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
               </li>
             ))}
 
-            <li className="menuNav__item">
+            {/* <li className="menuNav__item">
               <Link href="/contact">Contact</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
