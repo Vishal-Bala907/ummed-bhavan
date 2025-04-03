@@ -337,12 +337,11 @@ export default function TourList5() {
         <div className="row y-gap-30 pt-30">
           {tourDataThree.map((elm, i) => (
             <div
-              key={i}
-              className="col-lg-3 col-sm-6"
-              onClick={() => {
-                handleFacilityClick(i);
-              }}
-            >
+            key={i}
+            className="col-lg-3 col-sm-6"
+            style={{ cursor: "pointer" }}
+            onClick={() => handleFacilityClick(i)}
+          >
               <div className="tourCard -type-1 py-10 px-10 border-1 rounded-12  -hover-shadow">
                 <div className="tourCard__header">
                   <div className="tourCard__image ratio ratio-28:20">

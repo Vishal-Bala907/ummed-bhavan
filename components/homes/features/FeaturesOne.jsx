@@ -20,7 +20,8 @@ export default function FeaturesOne() {
         >
           {features.map((elm, i) => (
             <div key={i} className="col-lg-3 col-sm-6">
-              <div className="featureIcon -type-1 pr-40 md:pr-0">
+                            <div className="featureIcon -type-1 text-center px-20 py-60 rounded-12 hover-shadow-1">
+
                 <div className="featureIcon__icon">
                   <Image width={60} height={60} src={elm.iconSrc} alt="icon" />
                 </div>
