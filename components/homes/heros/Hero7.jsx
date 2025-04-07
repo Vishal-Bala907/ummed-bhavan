@@ -58,7 +58,7 @@ export default function Hero7() {
 
   return (
     <section className="hero -type-7">
-      <div className="hero__shape"></div>
+      {/* <div className="hero__shape"></div> */}
 
       <div className="hero__slider js-section-slider">
         <Swiper
